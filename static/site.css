@@ -1,11 +1,17 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}  
+} 
+
+body{
+    background-color: black;
+}
 
 .row{
     background-color: black;
     color: white;
-    border: 2px solid gray;
+    border: 3px solid gray;
 }
 
 .column {
@@ -40,13 +46,13 @@
     clear: both;
 }
 
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }  
 
-li {
+.navbar li {
     display: inline;
 }
 
@@ -76,10 +82,39 @@ li {
 }
 .navbar {
     text-align: center;
+    background-color: black;
 }
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        to left top,
+        black,
+        orange);
+}
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow: hidden;
+}
+.carousel .card{
+    height: 342px;
+    list-style: none;
+    background: white;
+    border-radius: 8px;
+}
+.card .img img{
+    width: 140;
+    height: 140;
+    object-fit: cover;
 }
