@@ -90,31 +90,53 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.wrapper{
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 0 35px;
     background: linear-gradient(
         to left top,
         black,
         orange);
+}
+.wrapper{
+    max-width: 1100;
+    width: 100%;
 }
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
     gap: 16px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .carousel .card{
     height: 342px;
     list-style: none;
     background: white;
     border-radius: 8px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .img{
+    background: orange;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
 }
 .card .img img{
     width: 140;
     height: 140;
     object-fit: cover;
+    border-radius: 50%;
 }
