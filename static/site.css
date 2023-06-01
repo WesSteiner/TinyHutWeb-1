@@ -8,18 +8,37 @@ body{
     background-color: black;
 }
 
-.row{
-    background-color: black;
-    color: white;
-    border: 3px solid gray;
+.brown{
+    background-color: #7c4700;
+    color: #a5c90f;
+    border: 2px solid #6f9c3d;
 }
 
+.green{
+    background-color: #6f9c3d;
+    color: #7c4700;
+    border: 2px solid #7c4700;
+}
+
+
+.headerfooter {
+    padding: 0 10px 0 0;
+    background-color: #6f9c3d;
+    color: #7c4700;
+    border: 2px solid #7c4700;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #7c4700,
+        #6f9c3d);
+}
+.row{
+    padding: 10px;
+    align-items: center;
+}
 .column {
     float: left;
     padding: 0 10px 0 0;
-    background-color: gray;
-    color: black;
-    border: 2px solid black;
     align-items: center;
 }
 
@@ -62,8 +81,8 @@ body{
   }
 
 .buttons button {
-    background-color: black; /* Green background */
-    border: 1px solid gray; /* Green border */
+    background-color: #ff8829; /* Green background */
+    border: 2px solid #a5c90f; /* Green border */
     color: white; /* White text */
     border-radius: 25px;
     padding: 10px 24px; /* Some padding */
@@ -77,12 +96,11 @@ body{
   
   /* Add a background color on hover */
 .buttons button:hover {
-    background-color: gray;
-    border-color: white;
+    background-color: #ff8829;
+    border-color: #ffb366;
 }
 .navbar {
     text-align: center;
-    background-color: black;
 }
 .center {
     display: flex;
@@ -97,9 +115,9 @@ body{
     min-height: 100vh;
     padding: 0 35px;
     background: linear-gradient(
-        to left top,
-        black,
-        orange);
+        to top,
+        #7c4700,
+        #6f9c3d);
 }
 .wrapper{
     max-width: 1100;
