@@ -20,6 +20,12 @@ body{
     border: 2px solid #7c4700;
 }
 
+.gradiant{
+    background: linear-gradient(
+        to top,
+        #7c4700,
+        #6f9c3d);
+}
 
 .headerfooter {
     padding: 0 10px 0 0;
@@ -27,10 +33,6 @@ body{
     color: #7c4700;
     border: 2px solid #7c4700;
     align-items: center;
-    background: linear-gradient(
-        to bottom,
-        #7c4700,
-        #6f9c3d);
 }
 .row{
     padding: 10px;
@@ -114,10 +116,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     padding: 0 35px;
-    background: linear-gradient(
-        to top,
-        #7c4700,
-        #6f9c3d);
+    background: #7c4700;
 }
 .wrapper{
     max-width: 1100;
