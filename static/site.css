@@ -8,6 +8,22 @@ body{
     background-color: black;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px;
+}
+
+.widecolumn {
+    grid-column: 1 / span 2;
+}
+
 .brown{
     background-color: #7c4700;
     color: #a5c90f;
