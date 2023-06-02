@@ -148,6 +148,7 @@ nav li:hover::after{
 }
 .container{
     display: flex;
+    border-radius: 50px;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
