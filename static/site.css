@@ -4,6 +4,11 @@
     box-sizing: border-box;
 } 
 
+.mainimage{
+    width: 1080px;
+    height: 500px;
+}
+
 body{
     background-color: black;
 }
