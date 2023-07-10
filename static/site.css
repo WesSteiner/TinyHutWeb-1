@@ -31,7 +31,7 @@ body{
 }
 
 .green{
-    background-color: transparent;
+    background-color: #2A312A;
     border: 5px solid #455B46;
     text-shadow: 1px 1px 15px #fff;
     color: #fff;
@@ -111,7 +111,7 @@ button {
     grid-gap: 8px;
     align-items: center;
     background: 0 0;
-    border: 1px solid #000000;
+    border: 1px solid #2A312A;
     color: #fff;
     text-shadow: 1px 1px 15px #fff;
     border-radius: 4px;
@@ -136,18 +136,18 @@ button {
         }
         .twitch button:hover {
             border-color: violet;
-            box-shadow: 4px 4px 8px violet;
-            transform: translate(-4px,-4px);
+            box-shadow: -4px 4px 8px violet;
+            transform: translate(4px,-4px);
         }
         .patreon button:hover {
             border-color: orangered;
-            box-shadow: 4px 4px 8px orangered;
-            transform: translate(-4px,-4px);
+            box-shadow: -4px 4px 8px orangered;
+            transform: translate(4px,-4px);
         }
         .instagram button:hover {
             border-color: hotpink;
-            box-shadow: 4px 4px 8px hotpink;
-            transform: translate(-4px,-4px);
+            box-shadow: -4px 4px 8px hotpink;
+            transform: translate(4px,-4px);
         }
         .youtube button:hover {
             border-color: red;
@@ -185,6 +185,7 @@ button {
   .mySlides img{
     width: 350px;
     height: 475px;
+    border-radius: 18px;
   }
   
   /* Next & previous buttons */
