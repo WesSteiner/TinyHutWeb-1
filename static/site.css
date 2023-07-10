@@ -190,6 +190,11 @@ button {
   .mySlides {
     display: none;
   }
+
+  .mySlides img{
+    width: 350px;
+    height: 475px;
+  }
   
   /* Next & previous buttons */
   .prev, .next {
@@ -248,4 +253,23 @@ button {
     to {opacity: 1}
   }
 
+  /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
   
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: darkgreen;
+  }
