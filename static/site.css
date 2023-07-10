@@ -5,8 +5,9 @@
 } 
 
 .mainimage{
-    width: 1080px;
+    width: 100%;
     height: 500px;
+    background-image: url(mainImage.png);
 }
 
 body{
@@ -36,9 +37,9 @@ body{
 }
 
 .green{
-    background-color: #6f9c3d;
-    border: 2px solid #7c4700;
-    text-shadow: 1px 1px 2px #a5c90f;
+    background-color: transparent;
+    border: 5px solid #a5c90f;
+    text-shadow: 1px 1px 2px #c97b0f;
 }
 
 .gradiant{
@@ -99,30 +100,13 @@ nav ul li {
     z-index: 2;
     transition: color 0.5s;
 }
-nav ul li::after{
-    content:'';
-    background: #ff8829;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    transition: top 0.5s, opacity 0.5s;
-}
-nav li:hover{
-    color: #fff;
-}
 nav li:hover::after{
     top: 50%;
     opacity: 1;
 }
 
 .squircle {
-    border-radius: 25px;
+    border-radius: 50px;
     padding: 20px; 
   }
 
@@ -131,7 +115,8 @@ button {
     grid-gap: 8px;
     align-items: center;
     background: 0 0;
-    border: 1px solid #000;
+    border: 1px solid #a5c90f;
+    color: #fff;
     border-radius: 4px;
     cursor: pointer;
     display: inline-flex;
@@ -147,10 +132,42 @@ button {
     transition: all .14s ease-out;
     white-space: nowrap;
 }
-    button:hover {
-        box-shadow: 4px 4px 0 #000;
-        transform: translate(-4px,-4px);
-    }
+        .twitter button:hover {
+            border-bottom-color: skyblue;
+            border-right-color: skyblue;
+            box-shadow: 4px 4px 0 skyblue;
+            transform: translate(-4px,-4px);
+        }
+        .twitch button:hover {
+            border-bottom-color: violet;
+            border-right-color: violet;
+            box-shadow: 4px 4px 0 violet;
+            transform: translate(-4px,-4px);
+        }
+        .patreon button:hover {
+            border-bottom-color: orangered;
+            border-right-color: orangered;
+            box-shadow: 4px 4px 0 orangered;
+            transform: translate(-4px,-4px);
+        }
+        .instagram button:hover {
+            border-bottom-color: hotpink;
+            border-right-color: hotpink;
+            box-shadow: 4px 4px 0 hotpink;
+            transform: translate(-4px,-4px);
+        }
+        .youtube button:hover {
+            border-bottom-color: red;
+            border-right-color: red;
+            box-shadow: 4px 4px 0 red;
+            transform: translate(-4px,-4px);
+        }
+        .spotify button:hover {
+            border-bottom-color: greenyellow;
+            border-right-color: greenyellow;
+            box-shadow: 4px 4px 0 greenyellow;
+            transform: translate(-4px,-4px);
+        }
     button:focus-visible{
         outline-offset: 1px;
     }
@@ -161,92 +178,74 @@ button {
     justify-content: center;
     flex-direction: column;
 }
-.container{
-    display: flex;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 0 35px;
-    background: #7c4700;
-}
-.wrapper{
-    max-width: 1100;
-    width: 100%;
-    position: relative;
-}
-.wrapper i{
-    width: 50px;
-    height: 50px;
-    background: white;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    font-size: 1.25rem;
-    transform: translateY(-50%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.wrapper i:first-child{
-    left: -22px;
 
-}
-.wrapper i:last-child{
-    right: -22px;
-    
-}
-.wrapper .carousel{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    gap: 16px;
-    overflow: hidden;
-}
-.carousel :where(.card, .img) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.carousel .card{
-    height: 500px;
-    list-style: none;   
-    display: flex;
-    padding-top: 15px;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.card .img{
-    background: orange;
-    width: 148px;
-    height: 148px;
-}
-.card .img img{
-    width: 400;
-    height: 500;
-    object-fit: cover;
-    border-radius: 20px;
-}
-.card h2 {
-    font-weight: 500;
-    font-size: 1.56rem;
-    margin: 30px 0 5px;
-}
-.card span{
-    color: grey;
-    font-size: 1.31rem;
-}
-@media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
+    position: relative;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
-    }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
