@@ -30,16 +30,12 @@ body{
     grid-column: 1 / span 2;
 }
 
-.brown{
-    background-color: #7c4700;
-    color: #a5c90f;
-    border: 2px solid #6f9c3d;
-}
-
 .green{
     background-color: transparent;
-    border: 5px solid green;
-    text-shadow: 1px 1px 2px #c97b0f;
+    border: 5px solid #455B46;
+    text-shadow: 1px 1px 15px #fff;
+    color: #fff;
+    box-shadow: 0px 20px 40px -30px #fff;
 }
 
 .gradiant{
@@ -76,7 +72,7 @@ nav {
     border-radius: 50px;
     width: 100%;
     padding: 10px;
-    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 20px 40px -30px #fff;
 }
 
 .navcontainer{
@@ -115,8 +111,9 @@ button {
     grid-gap: 8px;
     align-items: center;
     background: 0 0;
-    border: 1px solid #a5c90f;
+    border: 1px solid #000000;
     color: #fff;
+    text-shadow: 1px 1px 15px #fff;
     border-radius: 4px;
     cursor: pointer;
     display: inline-flex;
@@ -133,39 +130,33 @@ button {
     white-space: nowrap;
 }
         .twitter button:hover {
-            border-bottom-color: skyblue;
-            border-right-color: skyblue;
-            box-shadow: 4px 4px 0 skyblue;
+            border-color: skyblue;
+            box-shadow: 4px 4px 8px skyblue;
             transform: translate(-4px,-4px);
         }
         .twitch button:hover {
-            border-bottom-color: violet;
-            border-right-color: violet;
-            box-shadow: 4px 4px 0 violet;
+            border-color: violet;
+            box-shadow: 4px 4px 8px violet;
             transform: translate(-4px,-4px);
         }
         .patreon button:hover {
-            border-bottom-color: orangered;
-            border-right-color: orangered;
-            box-shadow: 4px 4px 0 orangered;
+            border-color: orangered;
+            box-shadow: 4px 4px 8px orangered;
             transform: translate(-4px,-4px);
         }
         .instagram button:hover {
-            border-bottom-color: hotpink;
-            border-right-color: hotpink;
-            box-shadow: 4px 4px 0 hotpink;
+            border-color: hotpink;
+            box-shadow: 4px 4px 8px hotpink;
             transform: translate(-4px,-4px);
         }
         .youtube button:hover {
-            border-bottom-color: red;
-            border-right-color: red;
-            box-shadow: 4px 4px 0 red;
+            border-color: red;
+            box-shadow: 4px 4px 8px red;
             transform: translate(-4px,-4px);
         }
         .spotify button:hover {
-            border-bottom-color: greenyellow;
-            border-right-color: greenyellow;
-            box-shadow: 4px 4px 0 greenyellow;
+            border-color: greenyellow;
+            box-shadow: 4px 4px 8px greenyellow;
             transform: translate(-4px,-4px);
         }
     button:focus-visible{
@@ -255,7 +246,7 @@ button {
 
   /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
   }
   
   /* Track */
@@ -265,11 +256,11 @@ button {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: green;
-    border-radius: 5px;
+    background: #28382B;
+    border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: darkgreen;
+    background: #2A312A;
   }
