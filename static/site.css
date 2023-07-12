@@ -212,7 +212,6 @@ button {
   /* Hide the images by default */
   .mySlides {
     display: none;
-    padding-left: 182px;
   }
   
   /* Next & previous buttons */
@@ -314,7 +313,7 @@ button {
     overflow: hidden;
     margin: 10px;
     min-width: 230px;
-    max-width: 315px;
+    max-width: 500px;
     width: 100%;
     color: #ffffff;
     text-align: left;
