@@ -134,6 +134,7 @@ nav li:hover::after{
 button {
     outline: 0;
     grid-gap: 8px;
+    display: inline-block;
     align-items: center;
     background: 0 0;
     border: 1px solid #2A312A;
@@ -142,7 +143,6 @@ button {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 4px;
     cursor: pointer;
-    display: inline-flex;
     flex-shrink: 0;
     font-size: 16px;
     gap: 8px;
@@ -154,6 +154,7 @@ button {
     text-overflow: ellipsis;
     transition: all .14s ease-out;
     white-space: nowrap;
+    width: 100px;
 }
         .twitter button:hover {
             border-color: skyblue;
@@ -211,13 +212,7 @@ button {
   /* Hide the images by default */
   .mySlides {
     display: none;
-  }
-
-  .mySlides img{
-    width: 300px;
-    height: 200px;
-    border-radius: 18px;
-    box-shadow: 0px 20px 40px -30px #000000;
+    padding-left: 182px;
   }
   
   /* Next & previous buttons */
@@ -311,4 +306,89 @@ button {
     position: fixed;
     top: 0;
     box-shadow: 0px 20px 40px -30px #000000;
+  }
+
+  /* slides */
+  .snip1336 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+    background-color: #141414;
+    border-radius: 15px;
+  }
+  .snip1336 img {
+    max-width: 100%;
+    vertical-align: top;
+    opacity: 0.85;
+  }
+  .snip1336 figcaption {
+    width: 100%;
+    background-color: #000000;
+    padding: 25px;
+    position: relative;
+  }
+  .snip1336 figcaption:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 0 0 400px;
+    border-color: transparent transparent transparent #000000;
+  }
+  .snip1336 figcaption button {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+    opacity: 0.65;
+    width: 47%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .snip1336 figcaption button:hover {
+    opacity: 1;
+  }
+  .snip1336 .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    z-index: 1;
+    max-width: 90px;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  .snip1336 .follow {
+    margin-right: 4%;
+    border-color: #455B46;
+    color: #455B46;
+  }
+  .snip1336 h2 {
+    margin: 0 0 5px;
+    font-weight: 300;
+  }
+  .snip1336 h2 span {
+    display: block;
+    font-size: 0.5em;
+    color: #455B46;
+  }
+  .snip1336 p {
+    margin: 0 0 10px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    opacity: 0.8;
   }
