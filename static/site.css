@@ -157,9 +157,7 @@ nav li:hover::after{
 
 button {
     outline: 0;
-    grid-gap: 8px;
     display: inline-block;
-    align-items: center;
     background: 0 0;
     border: 2px solid #2A312A;
     color: #fff;
@@ -167,18 +165,18 @@ button {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 4px;
     cursor: pointer;
-    flex-shrink: 0;
     font-size: 16px;
-    gap: 8px;
-    justify-content: center;
     line-height: 1.5;
     overflow: hidden;
-    padding: 10px 14px;
     text-decoration: none;
     text-overflow: ellipsis;
     transition: all .14s ease-out;
     white-space: nowrap;
     width: 100px;
+    height: 48px;
+}
+.logo button{
+
 }
         .twitter button:hover {
             border-color: skyblue;
@@ -218,7 +216,6 @@ button {
     button:focus-visible{
         outline-offset: 1px;
     }
-
 .center {
     display: flex;
     align-items: center;
@@ -314,9 +311,9 @@ button {
     background-clip: padding-box;
   }
   
-  /* Handle on hover */
+  /* Handle on hover 
   ::-webkit-scrollbar-thumb:hover {
-  }
+  }*/
 
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
@@ -341,7 +338,6 @@ button {
   }
   .snip1336 img {
     max-width: 100%;
-    max-height: 670px;
     vertical-align: top;
     opacity: 0.85;
   }
