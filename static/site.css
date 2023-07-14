@@ -316,7 +316,6 @@ button {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #2A312A;
   }
 
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -342,6 +341,7 @@ button {
   }
   .snip1336 img {
     max-width: 100%;
+    max-height: 670px;
     vertical-align: top;
     opacity: 0.85;
   }
