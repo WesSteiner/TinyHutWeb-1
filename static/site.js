@@ -22,3 +22,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
+var mainImage = document.getElementsByClassName("mainimage");
+mainImage.backgroundImage = "url('mainImage.png')";

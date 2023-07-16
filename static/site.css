@@ -22,7 +22,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: 1;
     width: 600px;
     padding: 20px;
     text-align: center;
@@ -44,6 +44,8 @@
 
 body{
     background: black;
+    background-image: url(Space.png);
+    background-attachment: fixed;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -73,12 +75,91 @@ iframe{
     grid-column: 1 / span 2;
 }
 
-.green{
-    background-color: #2A312A;
-    border: 5px solid #455B46;
-    text-shadow: 1px 1px 15px #fff;
-    color: #fff;
+.orange{
+  background-color: #333333;
+  border: 5px solid #e16428;
+  text-shadow: 1px 1px 15px #fff;
+  color: #fff;
 }
+
+.navcontainer .orange{
+  background-color: #222222;
+  text-shadow: 1px 1px 15px #fff;
+  color: #fff;
+  box-shadow: 0px 20px 40px -10px #000000;
+  border: none;
+}
+
+.orange button{
+  border: 2px solid #222222;
+  color: #fff;
+  text-shadow: 1px 1px 15px #fff;
+}
+
+.purple{
+  background-color: #430d4b;
+  border: 5px solid #7b337d;
+  text-shadow: 1px 1px 15px #fff;
+  color: #fff;
+}
+
+.navcontainer .purple{
+  background-color: #210535;
+  text-shadow: 1px 1px 15px #fff;
+  color: #fff;
+  box-shadow: 0px 20px 40px -10px #000000;
+  border: none;
+}
+
+.purple button{
+  border: 2px solid #210535;
+  color: #fff;
+  text-shadow: 1px 1px 15px #fff;
+}
+
+.green{
+  background-color: #093923;
+  border: 5px solid #0d5b28;
+  text-shadow: 1px 1px 15px #fff;
+  color: #fff;
+}
+
+.navcontainer .green{
+  background-color: #081f1c;
+  text-shadow: 1px 1px 15px #fff;
+  color: #fff;
+  box-shadow: 0px 20px 40px -10px #000000;
+  border: none;
+}
+
+.green button{
+  border: 2px solid #081f1c;
+  color: #fff;
+  text-shadow: 1px 1px 15px #fff;
+}
+
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #28382B;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  
+  /* Handle on hover 
+  ::-webkit-scrollbar-thumb:hover {
+  }*/
 
 .gradient{
     background: linear-gradient(
@@ -95,7 +176,6 @@ header {
 }
 
 footer { 
-    padding: 10px 10px 0 10px;
 }
 
 /* Clear floats after the columns */
@@ -119,9 +199,6 @@ nav {
     padding: 10px;
     height: 75px;
     overflow: hidden;
-    background-color: #2A312A;
-    text-shadow: 1px 1px 15px #fff;
-    color: #fff;
     z-index: 3;
 }
 
@@ -159,9 +236,6 @@ button {
     outline: 0;
     display: inline-block;
     background: 0 0;
-    border: 2px solid #2A312A;
-    color: #fff;
-    text-shadow: 1px 1px 15px #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 4px;
     cursor: pointer;
@@ -175,8 +249,8 @@ button {
     width: 100px;
     height: 48px;
 }
-.logo button{
-
+.logo{
+  top: 18px;
 }
         .twitter button:hover {
             border-color: skyblue;
@@ -293,33 +367,10 @@ button {
     to {opacity: 1}
   }
 
-  /* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #2A312A;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #28382B;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-clip: padding-box;
-  }
-  
-  /* Handle on hover 
-  ::-webkit-scrollbar-thumb:hover {
-  }*/
-
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
     position: fixed;
     top: 0;
-    box-shadow: 0px 20px 40px -30px #000000;
   }
 
   /* slides */
