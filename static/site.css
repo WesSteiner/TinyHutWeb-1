@@ -8,6 +8,7 @@
     width: 100%;
     height: 600px;
     background-image: url(mainImage.png);
+    background-repeat: no-repeat;
 }
 
 .mainimage h2{
@@ -308,6 +309,10 @@ button {
   .mySlides {
     display: none;
     padding: 10px;
+  }
+
+  .pn-container {
+    display: block;
   }
   
   /* Next & previous buttons */
