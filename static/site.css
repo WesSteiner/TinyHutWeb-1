@@ -152,7 +152,7 @@ iframe{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #28382B;
+    background: #222222;
     border-radius: 10px;
     border: 2px solid transparent;
     background-clip: padding-box;
@@ -451,7 +451,7 @@ button {
   .snip1336 h2 span {
     display: block;
     font-size: 0.5em;
-    color: #455B46;
+    color: #e16428;
   }
   .snip1336 p {
     margin: 0 0 10px;
