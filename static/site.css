@@ -221,10 +221,6 @@ header {
     padding: 90px 0 10px 0;
 }
 
-footer { 
-
-}
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
