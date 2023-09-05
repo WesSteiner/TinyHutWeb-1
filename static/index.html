@@ -4,136 +4,30 @@
         <title>The Tiny Hut</title>
         <link href="site.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" href="favicon-64x64.png" size="64x64"/>
-        <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.6.0/css/font-awesome.css" rel="stylesheet">-->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <script src="site.js" defer></script>
     </head>
+
     <body>
         <header>
-            <div class="mainimage squircle">
-                <h2>The Tiny Hut</h2>
+            <div class="navcontainer">
+                <nav id="navbar" class="sticky center borderless">
+                    <ul>
+                        <li class="youtube"><form action="https://www.youtube.com/@thetinyhut/featured"><button><i class="icon-youtube-play"></i>YOUTUBE</button></form></li>
+                        <li class="spotify"><form action="https://open.spotify.com/show/7zHvVTwnaPa0keSqZycTlN"><button>PODCAST</button></form></li>
+                        <li class="twitter"><form action="https://twitter.com/TheTinyHut"><button>TWITTER</button></form></li>
+                        <li class="logo"><form action="file:///C:/TinyHut/Website/TinyHutWeb-1/static/index.html"><button><img src="TinyLogoHut.png" alt="TinyHut"></button></form></li>
+                        <li class="twitch"><form action="https://www.twitch.tv/thetinyhut"><button>TWITCH</button></form></li>
+                        <li class="discord"><form action="https://www.instagram.com/teamtinyhut/"><button>DISCORD</button></form></li>
+                        <li class="patreon"><form action="https://www.patreon.com/user?u=83114050"><button>PATREON</button></form></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
-          <div class="center">
-            <div class="grid-container">
-                <div class="borderless squircle leftcell">
-                    <h2 class="fancyTitle">The Tiny Team</h2>
-                    <!-- Slideshow container -->
-                    <div class="slideshow-container center">
-                     <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
-                    <figure class="snip1336">
-                        <img src="ScoutStation.png" alt="sample87" />
-                        <figcaption>
-                          <img src="Wes_Portrait.png" alt="profile-sample4" class="profile" />
-                          <h2>Walter E. Steiner<span>dead scout</span></h2>
-                          <p>Computer Scientist. Early indie video game developer. I want to bring big ideas that are fun to explore to your screen.</p>
-                            <div class="youtube button"><form action="https://www.youtube.com/@deadscout000"><button>YouTube</button></form></div>
-                            <div class="twitch button"><form action="https://www.twitch.tv/deadxscout"><button>Twitch</button></form></div>
-                        </figcaption>
-                      </figure>
-                        </div>
-  
-                        <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
-                    <figure class="snip1336">
-                        <img src="ScoutStation.png" alt="sample87" />
-                        <figcaption>
-                          <img src="" alt="profile-sample4" class="profile" />
-                          <h2>Brian Alberty Jr.<span>BardNews</span></h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper mauris in est ultricies, ac vehicula mauris semper.</p>
-                          <div class="youtube button"><form action="https://www.youtube.com/@BardNews"><button>YouTube</button></form></div>
-                          <div class="twitch button"><form action="https://www.twitch.tv/bardnews"><button>Twitch</button></form></div>
-                        </figcaption>
-                      </figure>
-                        </div>
+        <canvas id="mainimage" class="mainimage"></canvas>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 5</div>
-                            <figure class="snip1336">
-                                <img src="Cordell_Banner.png" alt="sample87" />
-                                <figcaption>
-                                  <img src="Cordell_Portrait.png" alt="profile-sample4" class="profile" />
-                                  <h2>Cordell Cox<span>Roy Gammo</span></h2>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper mauris in est ultricies, ac vehicula mauris semper.</p>
-                                  <div class="spotify button"><form action="https://open.spotify.com/artist/3cfwIBKkmDJXSCPY6tR8tG"><button>Spotify</button></form></div>
-                                  <div class="twitch button"><form action="https://www.twitch.tv/thetinyhut"><button>Twitch</button></form></div>
-                                </figcaption>
-                              </figure>
-                                </div>
 
-                                <div class="mySlides fade">
-                                    <div class="numbertext">4 / 5</div>
-                                    <figure class="snip1336">
-                                        <img src="ScoutStation.png" alt="sample87" />
-                                        <figcaption>
-                                          <img src="" alt="profile-sample4" class="profile" />
-                                          <h2>Caleb Weaver<span>HiveMindNPC</span></h2>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper mauris in est ultricies, ac vehicula mauris semper.</p>
-                                          <div class="youtube button"><form action="https://www.youtube.com/@thetinyhut/featured"><button>YouTube</button></form></div>
-                                          <div class="twitch button"><form action="https://www.twitch.tv/thetinyhut"><button>Twitch</button></form></div>
-                                        </figcaption>
-                                      </figure>
-                                        </div>
-
-                                        <div class="mySlides fade">
-                                            <div class="numbertext">5 / 5</div>
-                                            <figure class="snip1336">
-                                                <img src="ScoutStation.png" alt="sample87" />
-                                                <figcaption>
-                                                  <img src="" alt="profile-sample4" class="profile" />
-                                                  <h2>Dalton <span>StuffedTwink1e</span></h2>
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper mauris in est ultricies, ac vehicula mauris semper.</p>
-                                                  <div class="youtube button"><form action="https://www.youtube.com/@thetinyhut/featured"><button>YouTube</button></form></div>
-                                                  <div class="twitch button"><form action="https://www.twitch.tv/thetinyhut"><button>Twitch</button></form></div>
-                                                </figcaption>
-                                              </figure>
-                                                </div>
-                        <!-- Next and previous buttons -->
-                      <div class="pn-container">
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                      </div>
-                    </div>
-                    <br>
-                </div>
-
-                <div class="borderless squircle rightcell">
-                    <h2 class="fancyTitle">Tiny Talk Podcast</h2>
-                    <div class="frame-container">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6zkRUluTGCyN3WTm7sKR0M?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                    <p>Find us talking about anything in the nerd world! Listen on Mondays and join our conversation on social media!</p>
-                </div>
-
-                <div class="borderless squircle widecolumn">
-                    <h2 class="fancyTitle">The Tiny Hut</h2>
-                    <span>We play games and imagine worlds.</span>
-                    <span>We plan to make content about various games and art.</span>
-                    <span>We are too late for the world and too early for the stars, so we will create our own and explore them forever.</span>
-                    <span>To Kindness in Competition. To Winning Respectfully and Losing with Laughter. To the Fun we have Together.</span>
-                    
-                </div>                
-            </div>
-          </div>
-        <div class="navcontainer">
-            <nav id="navbar" class="sticky center borderless">
-                <ul>
-                    <li class="youtube"><form action="https://www.youtube.com/@thetinyhut/featured"><button><i class="icon-youtube-play"></i>YOUTUBE</button></form></li>
-                    <li class="spotify"><form action="https://open.spotify.com/show/7zHvVTwnaPa0keSqZycTlN"><button>PODCAST</button></form></li>
-                    <li class="twitter"><form action="https://twitter.com/TheTinyHut"><button>TWITTER</button></form></li>
-                    <li class="logo"><form action="file:///C:/TinyHut/Website/TinyHutWeb-1/static/index.html"><button><img src="TinyLogoHut.png" alt="TinyHut"></button></form></li>
-                    <li class="twitch"><form action="https://www.twitch.tv/thetinyhut"><button>TWITCH</button></form></li>
-                    <li class="discord"><form action="https://www.instagram.com/teamtinyhut/"><button>DISCORD</button></form></li>
-                    <li class="patreon"><form action="https://www.patreon.com/user?u=83114050"><button>PATREON</button></form></li>
-                </ul>
-            </nav>
-        </div>
-        <footer>
-
-        </footer>
+        <footer></footer>
     </body>
 </html>
