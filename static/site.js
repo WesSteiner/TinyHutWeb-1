@@ -82,6 +82,9 @@
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         drawPaddle();
+        ctx.font = "30px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText("The Tiny Hut", canvas.width/2, canvas.height/2);
 
         if(rightPressed && paddleX < canvas.width-paddleWidth) {
             paddleX += 5;
