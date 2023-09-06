@@ -7,7 +7,7 @@
     var paddleHeight = 15;
     var paddleWidth = 15;
     var paddleX = (canvas.width-paddleWidth)/2;
-    var paddleY = (canvas.height-paddleHeight)-30;
+    var paddleY = (canvas.height-paddleHeight);
     var rightPressed = false;
     var leftPressed = false;
     var upPressed = false;
@@ -79,12 +79,16 @@
         ctx.closePath();
     }
 
+    function drawTitle() {
+      ctx.font = "30px Arial";
+      ctx.textAlign = "center";
+      ctx.fillText("The Tiny Hut", canvas.width/2, canvas.height/2);
+    }
+
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         drawPaddle();
-        ctx.font = "30px Arial";
-        ctx.textAlign = "center";
-        ctx.fillText("The Tiny Hut", canvas.width/2, canvas.height/2);
+        drawTitle();
 
         if(rightPressed && paddleX < canvas.width-paddleWidth) {
             paddleX += 5;
