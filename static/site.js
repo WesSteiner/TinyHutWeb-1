@@ -79,6 +79,10 @@
         ctx.closePath();
     }
 
+    function drawCritter() {
+      
+    }
+
     function drawTitle() {
       ctx.font = "30px Arial";
       ctx.textAlign = "center";
