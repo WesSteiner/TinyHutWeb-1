@@ -8,10 +8,17 @@
     var paddleWidth = 15;
     var paddleX = (canvas.width-paddleWidth)/2;
     var paddleY = (canvas.height-paddleHeight);
+
     var rightPressed = false;
     var leftPressed = false;
     var upPressed = false;
     var downPressed = false;
+
+    //var spriteSheetURL = 'https://codehs.com/uploads/e4cfb06e001bd92cf41139928e88819a';
+    // create a new image from the spritesheet
+    //var image = new Image();
+    //image.src = spriteSheetURL;
+    //image.crossOrigin = true;
 
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
@@ -80,7 +87,17 @@
     }
 
     function drawCritter() {
-      
+      canvas.drawImage(
+        image,
+        0,
+        0,
+        image.width,
+        image.height,
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
     }
 
     function drawTitle() {
@@ -93,6 +110,7 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         drawPaddle();
         drawTitle();
+       // drawCritter();
 
         if(rightPressed && paddleX < canvas.width-paddleWidth) {
             paddleX += 5;
