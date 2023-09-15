@@ -42,14 +42,29 @@
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    margin-top: 120px;
+}
+
+.row {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.column {
+  flex: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 p{
   padding-top: 15px;
+  color: #fff;
 }
 
 body{
     background: black;
+    color: #fff;
     background-image: url(Space.png);
     background-attachment: fixed;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -59,6 +74,48 @@ body{
   background-color: #222225;
   border: 5px solid transparent;
   color: #fff;
+}
+
+th {
+
+}
+
+td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.creator {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+}
+
+.table1 {
+  background-color: rgba(233, 139, 7, 0.765);
+}
+
+.table2 {
+  background-color: darkgoldenrod;
+}
+
+.table3 {
+  background-color: darkblue;
+}
+
+.table4 {
+  background-color: darkviolet;
+}
+
+.table5 {
+  background-color: darkgreen;
 }
 
 .navcontainer .borderless{
@@ -180,16 +237,6 @@ body{
   ::-webkit-scrollbar-thumb:hover {
   }*/
 
-.gradient{
-    background: linear-gradient(
-        to bottom,
-        #7c4700,
-        #2A312A,
-        #2A312A,
-        #2A312A,
-        #2A312A);
-}
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -220,7 +267,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 nav ul li {
