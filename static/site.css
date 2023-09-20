@@ -42,7 +42,6 @@
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    margin-top: 120px;
 }
 
 .row {
@@ -81,6 +80,16 @@ td {
   padding-right: 5px;
 }
 
+.podcastSection{
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.creatorSection{
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
 .creator {
   padding: 15px;
   margin-top: 10px;
@@ -95,11 +104,11 @@ table {
 }
 
 .table1 {
-  background-color: rgba(233, 139, 7, 0.765);
+  background-color: #AD6600;
 }
 
 .table2 {
-  background-color: darkgoldenrod;
+  background-color: darkred;
 }
 
 .table3 {
