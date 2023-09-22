@@ -87,7 +87,7 @@
     }
 
     function drawCritter() {
-      canvas.drawImage(
+      ctx.drawImage(
         image,
         0,
         0,

@@ -355,11 +355,17 @@ button {
 .cardcolumn {
   float: left;
   width: 25%;
+  display: flex;
   padding: 0 10px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.cardrow {margin: 0 -5px;}
+.cardrow {
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  justify-content: center;
+}
 
 /* Clear floats after the columns */
 .cardrow:after {
@@ -372,6 +378,7 @@ button {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
+  flex: 1;
   border-radius: 12px;
   text-align: center;
   background-color: #333333;
