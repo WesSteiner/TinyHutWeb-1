@@ -79,13 +79,13 @@ td {
 }
 
 .podcastSection{
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .creatorSection{
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .creator {
@@ -400,3 +400,4 @@ button {
     margin-bottom: 20px;
   }
 }
+
