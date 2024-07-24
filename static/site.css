@@ -4,21 +4,26 @@
     box-sizing: border-box;
 } 
 
+body{
+    background: black;
+    color: #fff;
+    background-image: url(hutImgs/mainImage.png);
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 p{
   padding-top: 15px;
   color: #fff;
 }
 
-body{
-    background: black;
-    color: #fff;
-    background-image: url(Space.png);
-    background-attachment: fixed;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+nav {
+  background-color: rgba(0,0,0, 0.6);
 }
 
 nav ul {
   list-style-type: none;
+  height: 65px;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -30,21 +35,18 @@ nav li {
 
 nav li a {
   display: block;
-  height: 50px;
+  align-content: center;
+  text-decoration: none;
+  color: white;
+  border-right: 3px solid white;
+  height: 65px;
   width: 100px;
-  background-color: #dddddd;
 }
 
-.mainimage{
-    background-image: url(mainImage.png);
-    box-shadow: 0px 20px 40px -10px #000000;
-    background-repeat: no-repeat;
-  }
+nav li a:hover {
+  border-right-style: dashed;
+  background-color: #000000;
 
-.mainimage img{
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
 }
 
 .fancyTitle{
@@ -71,12 +73,6 @@ nav li a {
   flex: 50%;
   padding-left: 5px;
   padding-right: 5px;
-}
-
-.borderless{
-  background-color: #222225;
-  border: 5px solid transparent;
-  color: #fff;
 }
 
 td {
